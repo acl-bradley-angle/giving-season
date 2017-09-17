@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css"/>
     <link rel="stylesheet" href="main.css">
+    <script src="https://get.mavo.io/mavo.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body mv-app="Ways-to-give" mv-storage="local">
     <header>
-    Logo
+    
+        <img src="http://ghostwoodestate.weebly.com/uploads/6/0/6/1/60615727/4893239_orig.png">
+
         <h1>Giving Season</h1>
     </header>
     <main>
         <div>
             Volunteer
             <ol>
-                <li>
+                <li property="volunteer-signup" mv-multiple>
                     Sherry Townsend
                 </li>
             </ol>
@@ -24,7 +28,7 @@
         <div>
             Fundraising
             <ol>
-                <li>
+                <li property="fundraising-signup" mv-multiple>
                     Lindsey Knight
                 </li>
             </ol>
@@ -32,7 +36,7 @@
         <div>
             Holiday Store
             <ol>
-                <li>
+                <li property="item-donation-signup" mv-multiple>
                     Kendrick Reyes
                 </li>
             </ol>
@@ -40,7 +44,7 @@
         <div>
             Toy Drive
             <ol>
-                <li>
+                <li property="company-toydrive-signup" mv-multiple>
                     Alchemy Code Lab
                 </li>
             </ol>
@@ -48,22 +52,20 @@
         <section>
             <h2>Questions</h2>
             <ul>
-                <li>
-                    <ul>Where do I drop off my donations?
-                        <li>At our resource center.</li>
-                    </ul>
+                <li mv-multiple>
+
+                        <p mv-multiple> </p>
+                
                 </li>
-                <li>
-                    <ul>How do I create a GoFundMe page?
-                        <li>Visit GoFundMe.com and create a user profile.</li>
-                    </ul>
-                </li>
+                
             </ul>
 
         </section>
     </main>
     <footer>
-        
+        <a href="https://bradleyangle.org/get-to-know-us/">
+        Contact Us
+        </a>
     </footer>
     
 </body>
